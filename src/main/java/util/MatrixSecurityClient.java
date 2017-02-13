@@ -25,7 +25,9 @@ public class MatrixSecurityClient {
     }
 
     private void loadMatrixClient() {
+        System.out.println("=============1");
         PropertiesUtil parser = PropertiesUtil.getInstance();
+        System.out.println("=============2");
 
         String serverUrl = parser.getValue("serverUrl");
 

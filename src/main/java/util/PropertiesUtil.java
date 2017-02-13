@@ -28,7 +28,7 @@ public class PropertiesUtil {
         pros = new Properties();
         InputStream in = null;
         try {
-            in = new FileInputStream(Thread.currentThread().getContextClassLoader().getResource("").getPath() + "sdk.properties");
+            in = this.getClass().getResourceAsStream("/sdk.properties");
             pros.load(in);
         } catch (FileNotFoundException e) {
             e.printStackTrace();

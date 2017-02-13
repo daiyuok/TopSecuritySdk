@@ -1,5 +1,11 @@
 #配置文件
 *.iml
 
+src/main/resources/sdk.properties
+
+src/test/resources/sdk.properties
+
 #过滤文件夹idea
 .idea/*
+
+target/*

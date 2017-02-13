@@ -9,7 +9,9 @@ import com.taobao.api.security.SecurityClient;
  */
 public class SecurityUtil {
 
-    private static SecurityClient securityClient = MatrixSecurityClient.getInstance().getSecurityClient();
+    public String ii(String name) {
+        return "ii my name is " + name;
+    }
 
     /**
      * 加密手机号
@@ -19,6 +21,7 @@ public class SecurityUtil {
      * @return
      */
     public String encryptPhone(String phone, String sessionKey) {
+        SecurityClient securityClient = MatrixSecurityClient.getInstance().getSecurityClient();
         String encrtyPhone = "";
 
         try {
@@ -37,6 +40,7 @@ public class SecurityUtil {
      * @return
      */
     public String decryptPhone(String encrtyPhone, String sessionKey) {
+        SecurityClient securityClient = MatrixSecurityClient.getInstance().getSecurityClient();
         String phone = "";
 
         try {
@@ -56,6 +60,7 @@ public class SecurityUtil {
      * @return
      */
     public String encryptNick(String nick, String sessionKey) {
+        SecurityClient securityClient = MatrixSecurityClient.getInstance().getSecurityClient();
         String encrtyNick = "";
 
         try {
@@ -74,6 +79,7 @@ public class SecurityUtil {
      * @return
      */
     public String decryptNick(String encrtyNick, String sessionKey) {
+        SecurityClient securityClient = MatrixSecurityClient.getInstance().getSecurityClient();
         String nick = "";
 
         try {
@@ -93,6 +99,7 @@ public class SecurityUtil {
      * @return
      */
     public String encryptReceiverName(String receiverName, String sessionKey) {
+        SecurityClient securityClient = MatrixSecurityClient.getInstance().getSecurityClient();
         String encryptReceiverName = "";
 
         try {
@@ -111,6 +118,7 @@ public class SecurityUtil {
      * @return
      */
     public String decryptReceiverName(String encryptReceiverName, String sessionKey) {
+        SecurityClient securityClient = MatrixSecurityClient.getInstance().getSecurityClient();
         String receiverName = "";
 
         try {
