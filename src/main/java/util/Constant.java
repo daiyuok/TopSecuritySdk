@@ -7,10 +7,16 @@ package util;
  */
 public class Constant {
 
-    public static String PHONE = "phone";
+    public static final String PHONE = "phone";
 
-    public static String NICK = "nick";
+    public static final String NICK = "nick";
 
-    public static String RECEIVER_NAME = "receiver_name";
+    public static final String RECEIVER_NAME = "receiver_name";
+
+    public static final String NORMAL = "normal";
+
+    public static final String SIMPLE = "simple";// 普通模式，不带检索功能
+
+    public static final String SEARCH = "search";// 带检索功能
 
 }
