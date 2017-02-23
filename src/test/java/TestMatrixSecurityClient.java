@@ -11,7 +11,7 @@ public class TestMatrixSecurityClient {
 
         SecurityUtil securityUtil = new SecurityUtil();
 
-        String sessionKey = "62019017ace9b6ZZ40ef5791ed7a7f5f8788056bace466e1050861231";
+        String sessionKey = "";
 //
 //        System.out.println(securityUtil.encryptPhone("18721883292", sessionKey));
 
@@ -31,6 +31,12 @@ public class TestMatrixSecurityClient {
 //
 //        System.out.println(securityUtil.decryptSimple(receiver_phone, sessionKey));
 
-    }
+        String receiver_name = "~8BAXbKiBsoj+qjcopgIaRQ==~hRWfe1d3~1~~";
 
+        System.out.println(securityUtil.decryptReceiverName(receiver_name, sessionKey));
+
+        String buyer_nick = "~k4g46TQTVWLvUrKWDSPXDQ==~dm8cMDeuTMvtJ6n7~1~~";
+
+        System.out.println(securityUtil.decryptNick(buyer_nick, sessionKey));
+    }
 }
